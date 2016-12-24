@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body id="bootstrap-themes" class="bs-doc-home swag-line template-index">
+    <nav>
+        <div class="row">
+            <div class="col-xs-3"></div>
+            <div class="col-xs-5"><h1 class="main-header schwifty"><small>Schwifty Calculator</small></h1></div>
+            <div class="col-xs-4"></div>
+        </div>
+    </nav>
+
+    <div class="hidden">
+        <audio id="audio1" src="sounds/quickFart.wav"></audio>
+        <audio id="audio2" src="sounds/RaspberryFart.wav"></audio>
+    </div>
+
+    <main class="container btn-group">
+        <div class="col-xs-2 showhim">
+            <div class="showme"><h6>Get Schwifty in here!</h6><a><img src="img/SaYmoW6.gif" class="img-responsive"></a></div>
+            <div class="ok"><a><img src="img/rickTwerk.gif" class="img-responsive img-circle imgLeft"><h6>Get Schwifty!</h6></a></div>
+        </div>
+
+        <!-- The entire Calculator -->
+        <div class="container calculator col-xs-8">
+            <p class="schwifty">::The Rick'N'ator 2000::</p>
+
+
+            <!--// Calculator input display-->
+            <div class="row">
+                <div class="col-xs-5 display">
+                    <input type="text" class="form-control" placeholder="What's " id="displayLeft" >
+                </div>
+                <div class="col-xs-2 display">
+                    <input type="text" class="form-control" placeholder="my" id="displayMiddle">
+                </div>
+                <div class="col-xs-5 display">
+                    <input type="text" class="form-control" placeholder="Purpose?" id="displayRight">
+                </div>
+            </div>
+
+            <!-- Clear, pos/neg, percent, divide -->
+            <div class="row">
+                <div class="col-xs-3">
+                    <button class="btn btn-default" id="clears" onclick="play()" value="PLAY">AC</button>
+                </div>
+
+                <div class="col-xs-3">
+                    <button class="btn btn-default" id="posNeg">+/-</button>
+                </div>
+                <div class="col-xs-3">
+                    <button class="btn btn-default" id="percent">%</button>
+                </div>
+                <div class="col-xs-3">
+                    <button class="btn btn-default operator" id="division">÷</button>
+                </div>
+            </div>
+
+            <!-- 7, 8, 9, multiply-->
+            <div class="row">
+                <div class="col-xs-3">
+                    <button class="btn btn-default numPad" id="seven">7</button>
+                </div>
+
+                <div class="col-xs-3">
+                    <button class="btn btn-default numPad" id="eight">8</button>
+                </div>
+
+                <div class="col-xs-3">
+                    <button class="btn btn-default numPad" id="nine">9</button>
+                </div>
+
+                <div class="col-xs-3">
+                    <button class="btn btn-default operator" id="multiplication">x</button>
+                </div>
+            </div>
+
+            <!-- 4, 5, 6 and minus -->
+            <div class="row">
+
+                <div class="col-xs-3">
+                    <button class="btn btn-default numPad" id="four">4</button>
+                </div>
+
+                <div class="col-xs-3">
+                    <button class="btn btn-default numPad" id="five">5</button>
+                </div>
+
+                <div class="col-xs-3">
+                    <button class="btn btn-default numPad" id="six">6</button>
+                </div>
+
+                <div class="col-xs-3">
+                    <button class="btn btn-default operator" id="subtraction">-</button>
+                </div>
+
+            </div>
+
+            <!-- 1, 2, 3, and plus -->
+            <div class="row">
+
+                <div class="col-xs-3">
+                    <button class="btn btn-default numPad" id="one">1</button>
+                </div>
+
+                <div class="col-xs-3">
+                    <button class="btn btn-default numPad" id="two">2</button>
+                </div>
+
+                <div class="col-xs-3">
+                    <button class="btn btn-default numPad" id="three">3</button>
+                </div>
+
+                <div class="col-xs-3">
+                    <button class="btn btn-default operator" id="addition">+</button>
+                </div>
+
+            </div>
+
+
+
+            <!-- Zero, decimal and equals -->
+            <div class="row">
+
+                <div class="col-xs-6">
+                    <button class="btn btn-default" id="zero">0</button>
+                </div>
+
+                <div class="col-xs-3">
+                    <button class="btn btn-default" id="decimal">.</button>
+                </div>
+
+                <div class="col-xs-3">
+                    <button class="btn btn-default" id="evaluate">=</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    <script src="js/calculator.js"></script>
+    <script>
+        function play(){
+            var audio = document.getElementById("audio1");
+            audio.play();
+        }
+    </script>
+
+</body>
+</html>

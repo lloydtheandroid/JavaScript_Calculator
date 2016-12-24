@@ -1,0 +1,133 @@
+input.form-control {
+    color: #FFF;
+    font-family: monospace;
+    font-size: small;
+    background: linear-gradient(0deg, darkgreen , green);
+}
+
+input#displayLeft {
+    border-radius: 10% 0 0 10%;
+    border-right: 0;
+    border-left: solid thin darkgreen;
+    border-top: solid darkgreen;
+}
+input#displayMiddle {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: solid darkgreen;
+    padding:0;
+}
+input#displayRight {
+    border-radius: 0 10% 10% 0;
+    border-left: 0;
+    border-top: solid darkgreen;
+
+
+}
+
+div.col-xs-4, div.col-xs-3, div.col-xs-6, div.col-xs-5, div.col-xs-2 {
+    padding: 0;
+}
+
+input::-webkit-input-placeholder {
+    font-size: xx-small;
+}
+
+input:-ms-input-placeholder {
+    color: red;
+}
+
+button.btn {
+    width: 100%;
+    border-radius: 0;
+    background: linear-gradient(125deg, #d8d8d8 , dimgray); /* Standard syntax */
+    border-top: thin solid dimgray;
+    border-right: thin solid dimgray;
+    border-bottom: thin solid whitesmoke;
+    border-left: thin solid whitesmoke;
+}
+
+button.btn:hover {
+    color: lime;
+}
+
+button#clears {
+    background: linear-gradient(125deg, red , lightcoral); /* Standard syntax */
+    border-top: thin solid darkred;
+    border-right: thin solid darkred;
+    border-bottom: thin solid whitesmoke;
+    border-left: thin solid whitesmoke;
+    border-radius: 10% 0 0 0;
+}
+
+button#evaluate {
+    border-radius: 0 0 10% 0;
+}
+
+button#zero {
+    border-radius: 0 0 0 5%;
+}
+
+button#division {
+    border-radius: 0 10% 0 0;
+}
+
+button#clears:hover {
+    color: yellow;
+}
+
+
+button.operator {
+    color: #FFF;
+    background: linear-gradient(125deg, orange , peachpuff); /* Standard syntax */
+    border-top: thin solid saddlebrown;
+    border-right: thin solid saddlebrown;
+    border-bottom: thin solid whitesmoke;
+    border-left: thin solid whitesmoke;
+}
+button.operator:hover {
+    color: #000;
+}
+
+input {
+    outline: none;
+    padding: 12px;
+    border-radius: 3px;
+    border: 1px solid black;
+    font-family: "Courier New", Courier, monospace;
+    font-size: x-small;
+}
+
+.calculator {
+    width: 300px;
+    margin: 0 2% 0 2%;
+    padding: 0 5% 3% 5%;
+    border-left: thin solid whitesmoke;
+    border-right: solid dimgray;
+    border-bottom:thin solid dimgray;
+    border-radius: 3%;
+    background: lightcyan; /* For browsers that do not support gradients */
+    background: linear-gradient(125deg, lightcyan , dimgray); /* Standard syntax */
+}
+.schwifty {
+    color: #bae9fe;
+    text-shadow: 1px 1px 2px black;
+}
+
+.showme{
+    display: none;
+}
+.showhim:hover .showme{
+    display : block;
+}
+.showhim:hover .ok{
+    display : none;
+}
+
+
+.imgLeft {
+    position: relative;
+    top: 15px;
+    display: block;
+}
