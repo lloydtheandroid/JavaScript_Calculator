@@ -73,7 +73,7 @@ for (var j = 0; j < operators.length; j++) {
                 lefty.value = RV + LV;
                 righty.value = "";
             }else if(middle.value == "-"){
-                lefty.value = RV - LV;
+                lefty.value = LV - RV;
                 righty.value = "";
             }else if(middle.value == "x"){
                 lefty.value = RV * LV;
@@ -96,7 +96,7 @@ equation.addEventListener('click', function () {
             lefty.value = RV + LV;
             break;
         case "-":
-            lefty.value = RV - LV;
+            lefty.value = LV - RV;
             break;
         case "x":
             lefty.value = RV * LV;
