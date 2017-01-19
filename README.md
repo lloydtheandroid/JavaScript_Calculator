@@ -1,6 +1,8 @@
 # JavaScript_Calculator
 Made while at Codeup. The JavaScript calculator was my first major javascript project built using vanilla javascript. 
 
+![Scwifty Calc](https://raw.githubusercontent.com/lloydtheandroid/JavaScript_Calculator/master/schwiftyCalc.png)
+
 ##JavaScript
 ```javascript
 for (var i = 0; i < numberPad.length; i++) {
